@@ -11,13 +11,13 @@
 	<h2><b>O que e css?</b></h2>
 	<p>CSS é a linguagem responsável pela aparência visual de uma página web. Ele permite personalizar elementos HTML, como textos, listas, formulários e tabelas, deixando o site mais organizado e visualmente agradável.</p>
 <br>
-	<h2><b>3.1 Introdução</b></h2>
+	<h2><b>Introdução</b></h2>
 	<p>mostra como as folhas style são estruturadas em css e como podemos incluir no código html.</p>
 <br>
-	<h2><b>3.1.1 O Princípio do CSS.</b></h2>
+	<h2><b>Princípio do CSS.</b></h2>
 	<p>Com CSS, é possível mudar cores, fontes, tamanhos, bordas, espaçamentos e vários outros aspectos visuais da página. Cada propriedade aceita apenas determinados valores válidos definidos pela própria linguagem CSS.</p>
 <br>
-	<h2><b>3.1.2 Incluindo css em html.</b></h2>
+	<h2><b>Incluindo css em html.</b></h2>
 	<p>Existem três maneiras principais de usar CSS em uma página HTML:</p>
 	<ol>
 		<li><b>CSS Externo (External CSS)</b></li>
@@ -31,7 +31,29 @@
 	<h2>Incluindo Arquivos CSS Externos (CSS Externo)</h2>
 	<p>O uso de arquivos CSS externos é, na maioria das vezes, a melhor escolha para organizar o visual de um site. Isso acontece porque o CSS fica separado do HTML, deixando o código mais limpo e fácil de entender. Além disso, o mesmo arquivo CSS pode ser reutilizado em várias páginas do projeto, garantindo que todas tenham a mesma aparência e estilo visual. Outra grande vantagem é a praticidade na manutenção: quando for necessário mudar cores, fontes ou qualquer detalhe do design, basta alterar o arquivo CSS centralizado uma única vez. Assim, todas as páginas conectadas a ele serão atualizadas automaticamente, economizando tempo e mantendo a consistência do site.</p>
 	<img src="Estruturadearquivocss">
-	<h2></h2>
+<br>
+	<h2>Cascata, Especificidade e Herança</h2>
+    <ul>
+        <li><b>Cascata (Cascading):</b> Determina a prioridade de aplicação quando múltiplas regras afetam o mesmo elemento. Se os seletores forem idênticos, a última regra definida no código substitui a anterior.</li>
+        <li><b>Especificidade:</b> Se os seletores forem diferentes, o seletor mais específico ganha prioridade (por exemplo, um seletor de ID é mais forte que um de classe, que por sua vez é mais forte que um seletor de tag geral).</li>
+        <li><b>Herança:</b> Algumas propriedades (como font-family e color) são herdadas pelos elementos filhos a partir dos elementos pai, enquanto outras (como border) não são herdadas.</li>
+    </ul>
+<br>
+    <h2>Cores e Formatação de Texto</h2>
+    <ul>
+        <li><b>Definição de Cores:</b> Podem ser aplicadas ao texto (color) ou ao fundo (background-color) utilizando nomes de cores, valores RGB, RGBA (com opacidade), valores hexadecimais ou HSL/HSLA.</li>
+        <li><b>Tipografia e Tipos de Letra:</b> A propriedade font-family define o tipo de letra, permitindo listar opções secundárias (fallbacks) caso a principal não esteja instalada no computador. O tamanho é ajustado via font-size (usando píxeis, percentagens ou a unidade</li>
+        <li><b>Estilo e Alinhamento:</b> O texto pode ser formatado em itálico (font-style), negrito (font-weight), maiúsculas/minúsculas (text-transform), sublinhado (text-decoration) e alinhado horizontalmente (text-align).  </li>
+        <li><b>Estilização de Links:</b> Utilizam-se pseudo-classes (:link, :visited, :hover, :active, :focus) para modificar o visual dos links dependendo do estado de interação do utilizador.</li>
+<br>
+    <h2>Sistemas de Layout (Disposição de Elementos)</h2>
+    <ul>
+        <li><b>Float Layout:</b> Técnica mais antiga que usa a propriedade float (para alinhar elementos à esquerda ou à direita).</li>
+        <li><b>Flexbox Layout:</b> Introduzido no CSS3, é um sistema unidimensional (funciona numa direção de cada vez, horizontal ou vertical). É altamente dinâmico, ajustando automaticamente o tamanho dos elementos filhos (flex items) dentro de um contentor (flex container) para preencher o espaço de forma flexível.</li>
+        <li></b>Grid Layout: Um sistema bidimensional mais recente e adequado para layouts complexos, permitindo alinhar elementos em linhas e colunas em simultâneo dentro de um contentor de grelha.</li>
+    </ul>
+<br>
+    <p>Em resumo, e como um guia estruturado para quem deseja aprender a controlar o aspeto visual e a disposição espacial de uma página web moderna utilizando CSS.</p>
 	
 
 </body>
